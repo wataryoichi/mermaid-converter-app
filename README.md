@@ -10,6 +10,12 @@ Mermaid Converter App is a cross-platform desktop application that allows you to
 
 ---
 
+## 🖼️ Application Screenshot
+
+![Mermaid Converter App Screenshot](images/screenshot.png)
+
+---
+
 ## 📥 Install & Build
 
 Mermaid Converter App does not provide pre-built binaries.  
