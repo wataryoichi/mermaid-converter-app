@@ -1,62 +1,78 @@
-# Mermaid Converter アプリ (セットアップ手順)
+# Mermaid Converter App
 
-下記の手順でMermaid Converterアプリをセットアップできます。
+Mermaid Converter App is a cross-platform desktop application that allows you to convert Mermaid.js diagrams into PDF, PNG, and SVG formats. Built with Electron, this app supports drag & drop functionality for seamless conversions.
 
-## ファイル構成
+## 🚀 Features
+- Convert **Mermaid.js diagrams** to **PDF, PNG, SVG**
+- **Drag & Drop** support for easy file selection
+- **Cross-platform** (Windows & macOS)
+- Simple and lightweight UI
 
-アプリは以下のファイルで構成されています:
+---
 
-1. `package.json` - 依存関係と設定
-2. `main.js` - Electronのメイン処理
-3. `preload.js` - プリロード処理
-4. `index.html` - メインUI
-5. `renderer.js` - UI操作のためのスクリプト
-6. `styles.css` - UIスタイル
-7. `README.md` - 説明書
-8. `sample.mmd` - サンプルMermaidファイル
+## 📥 Install & Build
 
-## セットアップ手順
+Mermaid Converter App does not provide pre-built binaries.  
+Please build it from the source code using the following steps.
 
-1. 以下のリンクからZIPファイルをダウンロードしてください:
-   [Mermaid-Converter.zip](https://drive.google.com/file/d/1S4NnpJBwE0YdF2-8-RdzwgDx9RQWa8gq/view?usp=sharing)
-
-2. ダウンロードしたZIPファイルを展開します
-
-3. ターミナルで展開したディレクトリに移動します:
-   ```bash
-   cd path/to/mermaid-converter
-   ```
-
-4. 依存関係をインストールします:
-   ```bash
-   npm install
-   ```
-
-5. アプリを起動します:
-   ```bash
-   npm start
-   ```
-
-## ビルド方法
-
-Mac版アプリをビルドする場合:
-```bash
-npm run build:mac
+### **1. Clone the repository & install dependencies**
+```sh
+git clone https://github.com/wataryoichi/mermaid-converter-app.git
+cd mermaid-converter-app
+npm install
 ```
 
-Windows版アプリをビルドする場合:
-```bash
-npm run build:win
+### **2. Run the app (development mode)**
+```sh
+npm start
 ```
 
-両方のプラットフォーム向けにビルドする場合:
-```bash
-npm run build
+### **3. Build for production**
+- **For macOS:**
+  ```sh
+  npm run build:mac
+  ```
+- **For Windows:**
+  ```sh
+  npm run build:win
+  ```
+- **For both platforms:**
+  ```sh
+  npm run build
+  ```
+
+The built application will be available in the `dist/` folder.
+
+---
+
+## 🛠 How to Use
+
+### **Basic Usage**
+1. **Drag & Drop** your Mermaid.js `.mmd` file into the app.
+2. Select the desired output format (**PDF, PNG, SVG**).
+3. Click **Convert** and save the file to your desired location.
+
+### **Convert from Command Line (Advanced Users)**
+If you want to convert Mermaid.js files via CLI, you can use the following command:
+```sh
+mermaid-converter --input diagram.mmd --output diagram.png
 ```
 
-ビルドされたアプリは `dist` ディレクトリに生成されます。
+---
 
-## 注意事項
+## 📜 License
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
 
-- Node.js と npm が事前にインストールされている必要があります
-- @mermaid-js/mermaid-cli はインストール時に自動的にダウンロードされます
+---
+
+## 🤝 Contributing
+Pull requests are welcome! If you find any issues or have suggestions, feel free to open an [issue](https://github.com/wataryoichi/mermaid-converter-app/issues).
+
+---
+
+## 📧 Contact
+For inquiries or feedback, reach out via GitHub issues.
+
+---
+
+### ✅ Enjoy using Mermaid Converter App! 🎉
