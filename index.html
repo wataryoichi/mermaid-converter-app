@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mermaid Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mermaid Converter</h1>
+    
+    <div class="settings-section">
+      <div class="setting">
+        <label for="output-format">出力形式:</label>
+        <select id="output-format">
+          <option value="svg">SVG</option>
+          <option value="png">PNG</option>
+          <option value="pdf">PDF</option>
+        </select>
+      </div>
+      
+      <div class="setting">
+        <label for="theme-select">テーマ:</label>
+        <select id="theme-select">
+          <option value="default">Default</option>
+          <option value="forest">Forest</option>
+          <option value="dark">Dark</option>
+          <option value="neutral">Neutral</option>
+        </select>
+      </div>
+      
+      <div class="setting">
+        <label>出力先:</label>
+        <span id="output-directory-display">読み込み中...</span>
+        <button id="select-output-btn">フォルダ選択</button>
+      </div>
+    </div>
+
+    <div id="drop-area">
+      <p>Mermaidファイルをここにドラッグ＆ドロップ</p>
+      <p>または</p>
+      <label for="file-select" class="file-select-label">ファイルを選択</label>
+      <input type="file" id="file-select" accept=".mmd,.md" hidden>
+    </div>
+
+    <div id="conversion-status" class="hidden">
+      <div class="status-content">
+        <div id="status-message"></div>
+        <div class="spinner hidden"></div>
+      </div>
+    </div>
+    
+    <div id="results" class="hidden">
+      <h2>変換結果</h2>
+      <div id="result-list"></div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

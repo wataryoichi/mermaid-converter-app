@@ -1,0 +1,10 @@
+flowchart TD
+    A[Mermaidファイル作成] --> B[ファイルをドラッグ&ドロップ]
+    B --> C{形式を選択}
+    C -->|SVG| D[SVGに変換]
+    C -->|PNG| E[PNGに変換]
+    C -->|PDF| F[PDFに変換]
+    D --> G[変換完了]
+    E --> G
+    F --> G
+    G --> H[Marpスライドに挿入]
