@@ -75,4 +75,12 @@ For inquiries or feedback, reach out via GitHub issues.
 
 ---
 
+## 🙏 Acknowledgements
+
+- [Electron](https://www.electronjs.org/) - Cross-platform desktop application framework
+- [Mermaid](https://mermaid.js.org/) - JavaScript based diagramming and charting tool
+- [mermaid-cli](https://github.com/mermaid-js/mermaid-cli) - Command-line interface for Mermaid
+
+---
+
 ### ✅ Enjoy using Mermaid Converter App! 🎉
