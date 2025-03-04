@@ -47,16 +47,10 @@ The built application will be available in the `dist/` folder.
 
 ## 🛠 How to Use
 
-### **Basic Usage**
+### **Usage**
 1. **Drag & Drop** your Mermaid.js `.mmd` file into the app.
 2. Select the desired output format (**PDF, PNG, SVG**).
 3. Click **Convert** and save the file to your desired location.
-
-### **Convert from Command Line (Advanced Users)**
-If you want to convert Mermaid.js files via CLI, you can use the following command:
-```sh
-mermaid-converter --input diagram.mmd --output diagram.png
-```
 
 ---
 
